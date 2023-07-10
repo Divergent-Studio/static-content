@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Noto Serif", serif !important;
+}
+
+.heading {
+  color: whitesmoke;
+  margin-left: 6%;
+  margin-top: 6%;
+  margin-right: 50%;
+  font-weight: 100;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: absolute;
+  top: 10vh; /* Adjust the desired distance from the top */
+  left: 5vw; /* Adjust the desired distance from the left */
+  color: #fff;
+  width: 50%; /* Adjust the desired width */
+}
+
+.hero-content h1,
+.hero-content p {
+  margin: 0;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.hero-content h1 {
+  font-size: 4vw; /* Adjust the font size proportionally */
+  margin-bottom: 2vh; /* Adjust the margin proportionally */
+}
+
+.hero-content p {
+  font-size: 2vw; /* Adjust the font size proportionally */
+}
+
+.logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.logo img {
+  max-height: 100px;
+}
+/* NAV bar bottom */
+
+.bottom-nav {
+  position: absolute;
+  bottom: 3vh;
+  right: 3vh;
+  /* background-color: #333; */
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.bottom-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bottom-nav ul li {
+  display: inline-block;
+  margin-right: 50px; /* Adjust the margin as per your spacing needs */
+}
+
+.bottom-nav ul li:last-child {
+  margin-right: 0; /* Remove the margin from the last list item */
+}
+
+.bottom-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5vw; /* Adjust the desired proportional font size */
+}
+
+.fullscreen-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  z-index: 10;
+}
+
+.fullscreen-container button {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.fullscreen-container img {
+  max-width: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-list {
+    margin: 10px 0;
+  }
+}
